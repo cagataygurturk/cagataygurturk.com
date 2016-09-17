@@ -26,7 +26,7 @@ github_username:  cagataygurturk
 markdown: kramdown
 theme: minima
 highlighter: rouge
-#permalink: /:title
+permalink: /:title
 
 # PAGINATION
 gems: [jekyll-paginate]
