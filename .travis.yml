@@ -1,6 +1,5 @@
 language: ruby
-install: gem install jekyll html-proofer
-script: jekyll build
+script: bundle exec jekyll build
 deploy:
   provider: s3
   access_key_id:
