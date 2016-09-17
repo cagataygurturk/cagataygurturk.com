@@ -11,4 +11,3 @@ deploy:
   region: eu-west-1
   local_dir: _site
   acl: public_read
-
