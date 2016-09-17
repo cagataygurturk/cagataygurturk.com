@@ -1,0 +1,14 @@
+language: ruby
+install: gem install jekyll html-proofer
+script: jekyll build
+deploy:
+  provider: s3
+  access_key_id:
+    secure: "j0bhNp0cpefVNmcY6U59dZPJiKPeLsaNT4Bh2RYBExTE75NNpZ+YuWx6RN6kd193cI6cnJKSuBSurXOrJI8icrkX751IJgM6Fw7ME6htSwmVXlvWrOQXOPf8BRxj/KF+4Vq4N7j4e8kViXpYkR9dxbbXLxO4AEN5hLPS7PRCTVc="
+  secret_access_key:
+    secure: "LZpH7o6gQHm1Y84L1s6BO+QlW436wKZLV4dC8ZwY2ClNaGcFoldpKRmDM+lL6jQ8PxWfLaCXlTxTDYgYZQB5zOFsqHMrrsG/YPUBNKv9XFZc9Zg7aKa/tOJNVP9eEfHmvph5Tn719lEHDhPCeT8KGrYfD8OxaTY5TH8GoiSacmc="
+  bucket: cagataygurturk.com
+  skip_cleanup: true
+  region: eu-west-1
+  local_dir: _site
+  acl: public_read
